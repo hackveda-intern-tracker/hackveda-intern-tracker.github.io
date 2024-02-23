@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intern Tracker - Vaishnavi Dattatray Gangal Profile</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Reset default browser styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Set global styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #1e0e62;
+      padding: 10px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .menu li {
+      margin-left: 20px;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    /* Profile page styles */
+    .profile {
+      margin-top: 30px;
+    }
+
+    .profile-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile-details {
+      margin-bottom: 30px;
+    }
+
+    .profile-details h2 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .profile-details p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .profile-section {
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+
+    .profile-section h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .profile-section ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    .profile-section ul li {
+      margin-bottom: 5px;
+    }
+
+    .profile-section ul li::before {
+      content: '\2022';
+      color: #1e0e62;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .profile-settings {
+      margin-top: 30px;
+    }
+
+    .profile-settings h2 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .profile-settings form {
+      margin-top: 20px;
+    }
+
+    .profile-settings form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .profile-settings form input[type="text"],
+    .profile-settings form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .profile-settings form input[type="button"] {
+      padding: 10px 20px;
+      background-color: #1e0e62;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    /* Footer styles */
+    footer {
+      background-color: #1e0e62;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: auto; /* Push the footer to the bottom */
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    footer ul li {
+      margin-left: 10px;
+    }
+
+    footer ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    .action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.action-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1e0e62;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.action-button:last-child {
+  margin-right: 0;
+}
+
+/* Modal Popup Styles */
+/* Modal Popup Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+  </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3822574280143220"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Intern Tracker</div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+        <li><a href="Presentation.html">Presentations</a></li>
+        <li><a href="search.html">Search References</a></li>
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="logout.php">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="profile">
+      <div class="profile-header">
+         
+        <img id="photo" title="Update Profile Picture" class="profile-picture" width="96" height="96" src="https://img.icons8.com/color/96/user.png" alt="user"/>        <input id="file" type="file" accept="image/png, image/jpeg, image/jpg" hidden />
+        
+        <h2>Vaishnavi Dattatray Gangal</h2>
+        <p>Email: vaishnavi.gangal@gmail.com</p>
+        <p>Contact: 7038208244</p>
+      </div>
+
+      <div class="profile-section">
+        <h3>Internship Details</h3>
+        <ul>
+        <li>Major Project: Day Trade Insight</li>
+        <li>Department: Java Interview Quiz</li>
+        <li>Industry Mentor: Mr. Devanshu Shukla, Director</li>
+        <li>Start Date: 1 January 2024</li>
+        <li>Internship Status: ACTIVE</li>
+        
+                
+        </ul>
+      </div>
+
+    <div class="profile-section">
+    <div class="action-buttons">
+      <button class="action-button" id="mark_attendance">Mark Attendance</button>
+      <button class="action-button" id="request_task">Request New Task</button>
+      <button class="action-button" id="schedule_ppt">Schedule a Presentation</button>
+      <button class="action-button" id="request_completion">Request Completion Letter</button>
+    </div>
+    </div>
+
+      <!--<div class="profile-section">
+        <h3>Skills and Interests</h3>
+        <ul>
+          <li>Digital Marketing</li>
+          <li>Social Media Management</li>
+          <li>Content Writing</li>
+        </ul>
+      </div>-->
+      
+      <div class="profile-section">
+        <h3>Task Progress</h3>
+        <ul>
+      
+      <li>Software Development Lifecycle for Stock Trading Application - <b>Due Date:</b> 03 Feb 2024 - <b>Status:</b> Pending</li><li>Overview of Project Synopsis - <b>Due Date:</b> 08 Jan 2024 - <b>Status:</b> Complete</li>
+          <!--<li>Task 1 - Due Date: 2023-02-15 - Completed</li>-->
+        </ul>
+      </div>
+
+      <div class="profile-section">
+        <h3>Presentation Progress</h3>
+        <ul>
+            
+            <li>Software Development Lifecycle for Stock Trading Application - <b>Due Date:</b> 7 March 2024 - <b>Status:</b> Pending</li><li>Overview of Project Synopsis - <b>Due Date:</b> 9 January 2024 - <b>Status:</b> Complete </li>            
+          </ul>
+      </div>
+    </div>
+    
+    <div class="profile-section">
+        <h3>Probation Performance Progress</h3>
+        <ul>
+          <li>Attendence - 42 days</li>
+          <li>Presentation Scheduled -1</li>
+          <li>Presentation Score -65%</li>
+          <li>Demonstration Score -65%</li>
+          <li>Communication Score -60%</li>
+          <li>Additional Score -66%</li>
+            
+            <!--<button class="action-button" id="schedule_ppt_2">Schedule a Presentation</button>!-->          
+          </ul>
+      </div>
+    
+    <div class="profile-section">
+        <h3>Probation Result</h3>
+        <p>Under Probation</p>
+      </div>
+      
+      <div class="profile-section">
+      <h3>Ongoing Projects at Hackveda</h3>
+      <p>Hackveda is currently engaged in several exciting projects, each showcasing a blend of innovation and practical application.</p>
+      <p>These projects reflect Hackveda's dedication to technological advancement and community engagement, offering both practical solutions and opportunities for professional growth.</p>
+  </div>
+  
+  <div class="profile-section">
+                                <h3>Goa Shipyard Website Annual Maintenance</h3>
+                            <ul><li>Ensuring seamless digital operations for a premier maritime facility</li><a class='action-button' target='_blank' href='https://www.hackveda.in/ongoing-projects/goa-shipyard-website.html'>Visit Project Site</a></ul></div><div class="profile-section">
+                                <h3>Forensic Acquisition of Website</h3>
+                            <ul><li>Understanding and implementing forensic acquisition techniques for websites</li><a class='action-button' target='_blank' href='https://www.hackveda.in/ongoing-projects/forensic-acquisition-website.html'>Visit Project Site</a></ul></div><div class="profile-section">
+                                <h3>Armed Forces Medical Services Online Examination Website</h3>
+                            <ul><li>Platform for conducting and managing medical services examinations</li><a class='action-button' target='_blank' href='https://hackveda.in/ongoing-projects/armed-forces-medical-services-online-examination.html'>Visit Project Site</a></ul></div><div class="profile-section">
+                                <h3>PHE Kashmir Website Development</h3>
+                            <ul><li>A comprehensive project focusing on the development of PHE Kashmir website</li><a class='action-button' target='_blank' href='https://hackveda.in/ongoing-projects/phe-kashmir-website.html'>Visit Project Site</a></ul></div><div class="profile-section">
+                                <h3>Platform for Android OS Integrity Patching</h3>
+                            <ul><li>Ensuring the security and integrity of Android operating systems</li><a class='action-button' target='_blank' href='https://www.hackveda.in/ongoing-projects/platform-android-os-integrity-patching.html'>Visit Project Site</a></ul></div><div class="profile-section">
+                                <h3>State Election Commission Website</h3>
+                            <ul><li>A Comprehensive Portal for Managing and Facilitating State Elections</li><a class='action-button' target='_blank' href='https://hackveda.in/ongoing-projects/state-election-commission-website.html'>Visit Project Site</a></ul></div>
+    <div class="profile-settings">
+      <h2>Profile Settings</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name"name="name" value="Vaishnavi Dattatray Gangal">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" value="vaishnavi.gangal@gmail.com">
+
+        <label for="password">New Password</label>
+        <input type="password" id="password" name="password">
+
+        <input type="button" value="Save Changes" id="save_password">
+      </form>
+    </div>
+    </div>
+  
+  <!-- Modal Popup -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="responseMessage"></div>
+  </div>
+</div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Intern Tracker. All rights reserved.</p>
+      <ul>
+        <li><a href='https://hackveda.in/Terms%20and%20Conditions.pdf'>Terms of Service</a></li>
+        <li><a href='https://hackveda.in/Refund%20and%20Cancellation.pdf'>Refund & Cancellation</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script>
+  <?php
+// PHP code goes here
+?>

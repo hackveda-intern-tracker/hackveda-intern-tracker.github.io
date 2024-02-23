@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interns Task Details</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    /* Reset default browser styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Set global styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #1e0e62;
+      padding: 10px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .menu li {
+      margin-left: 20px;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    /* Task details styles */
+    .task-details {
+      margin-top: 30px;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+
+    .task-details h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .task-details p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .task-details .status {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .task-details .actions {
+      margin-bottom: 20px;
+    }
+
+    .task-details .actions button {
+      padding: 10px 20px;
+      background-color: #1e0e62;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .task-details .progress {
+      margin-bottom: 20px;
+    }
+
+    .task-details .progress-bar {
+      width: 100%;
+      background-color: #ddd;
+      height: 20px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .task-details .progress-bar span {
+      display: block;
+      height: 100%;
+      background-color: #1e0e62;
+    }
+
+    .task-details .comments {
+      margin-bottom: 20px;
+    }
+
+    .task-details .comments p {
+      margin-bottom: 10px;
+    }
+
+    /* Supervisor details styles */
+    .supervisor-details {
+      margin-bottom: 20px;
+    }
+
+    .supervisor-details h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .supervisor-details p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Related tasks styles */
+    .related-tasks {
+      margin-bottom: 20px;
+    }
+
+    .related-tasks h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .related-tasks ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    .related-tasks ul li {
+      margin-bottom: 5px;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #1e0e62;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: auto; /* Push the footer to the bottom */
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    footer ul li {
+      margin-left: 10px;
+    }
+
+    footer ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+  </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3822574280143220"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Intern Tracker</div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+        <li><a href="Presentation.html">Presentations</a></li>
+        <li><a href="search.html">Search References</a></li>
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="logout.php">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+      
+      <div class="task-details">
+          
+          <h1>Task Progress</h1>
+          
+          <p id="task_percent">Status: 0% complete</p>
+          
+      <div class="progress">
+        <div class="progress-bar" id="progress_bar">
+          <span style="width: 0%;"></span>
+        </div>
+      </div>
+      </div>
+      
+      <div class="task-details">
+                  <h1>Software Development Lifecycle for Stock Trading Application</h1>
+                  
+                  <p>Assigned On: 27 Jan 2024 09:44:41</p>
+                  
+                  <p>Due Date: 03 Feb 2024</p>
+                  
+                  <div class="status">Status: Pending</div>
+                  
+                  <p>Reference: No Task Reference Required to complete this task</p>
+                  
+                  <p><strong>Month 1</strong></p> <p>Week 1-2: Introduction to Stock Trading Application Development</p> <ul> <li>Overview of stock trading application development using Java</li> <li>Understanding of the NSE and BSE stock market and trading rules</li> <li>Introduction to options trading</li> </ul> <p>Week 3-4: Java Programming Fundamentals</p> <ul> <li>Java programming language syntax and basics</li> <li>Object-oriented programming concepts</li> <li>Introduction to Java frameworks such as Spring and Hibernate</li> </ul> <p>Week 5-6: Developing the Application's UI</p> <ul> <li>Introduction to JavaFX and Swing frameworks for UI development</li> <li>Building the application's user interface using JavaFX or Swing</li> <li>Introduction to responsive UI design</li> </ul> <p>Week 7-8: Integration with Stock Exchange APIs</p> <ul> <li>Understanding of stock exchange APIs for NSE and BSE</li> <li>Integration of APIs to fetch real-time data for stocks and options</li> <li>Implementation of APIs for live data streaming</li> </ul> <p><strong>Month 2</strong></p> <p>Week 1-2: Designing the Trading System</p> <ul> <li>Designing the trading system for the application</li> <li>Understanding trading algorithms and their implementation using Java</li> <li>Introduction to algorithmic trading</li> </ul> <p>Week 3-4: Implementing Trading Algorithms</p> <ul> <li>Implementation of simple trading algorithms for the application</li> <li>Introduction to machine learning algorithms for trading</li> </ul> <p>Week 5-6: Advanced Features of Trading Application</p> <ul> <li>Adding advanced features such as order management, trade execution, and risk management</li> <li>Developing customized watchlists and notifications</li> <li>Introduction to options trading strategies</li> </ul> <p>Week 7-8: Testing and Deployment</p> <ul> <li>Testing the application for accuracy, speed, and reliability</li> <li>Deploying the application to a cloud server such as AWS or Google Cloud</li> <li>Introduction to continuous integration and deployment using tools such as Jenkins and Docker</li> </ul>
+                  
+                  <!--<div classclass="actions">
+                    <button>Mark as Completed</button>
+                    <button>Request Assistance</button>
+                    <button>Submit Task</button>
+                  </div>-->
+                  
+                  <div class="comments">
+                    <div class="group w-full text-gray-800 dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 bg-gray-50 dark:bg-[#444654]"> <div class="text-base gap-4 md:gap-6 md:max-w-2xl lg:max-w-xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0 m-auto"> <div class="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]"> <div class="flex flex-grow flex-col gap-3"> <div class="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap"> <div class="markdown prose w-full break-words dark:prose-invert light"> <ol> <li> <p>Understand the Software Development Lifecycle (SDLC): The first step in creating a presentation on SDLC is to gain an understanding of what it is and the different phases involved. Research the different models of SDLC (Waterfall, Agile, etc.) and choose the one you want to focus on.</p> </li> <li> <p>Define the purpose of the presentation: Determine the target audience and the main objective of the presentation. Is it to educate colleagues or to present to a client or management team?</p> </li> <li> <p>Plan the structure of the presentation: Outline the presentation by breaking it down into sections such as the introduction, SDLC phases, challenges, benefits, and conclusion.</p> </li> <li> <p>Collect information: Gather information on the chosen SDLC model, including advantages, disadvantages, and any real-world examples. Use reputable sources such as academic articles, industry publications, and case studies.</p> </li> <li> <p>Create a visually appealing presentation: Choose a visually appealing design template and use high-quality graphics, images, and charts to convey the information. Keep the text concise and easy to read.</p> </li> <li> <p>Practice the presentation: Practice delivering the presentation to ensure that it flows smoothly and meets the objectives. Keep to the time allocated for the presentation.</p> </li> <li> <p>Engage with the audience: Interact with the audience during the presentation by asking questions, encouraging feedback, and answering any questions they may have.</p> </li> <li> <p>Conclude the presentation: Summarize the key points of the presentation and conclude with a call to action or recommendations.</p> </li> <li> <p>Seek feedback: Get feedback from colleagues or supervisors to identify areas for improvement and incorporate suggestions in future presentations.</p> </li> </ol> <p>By following these instructions, interns can create a compelling and informative presentation on the Software Development Lifecycle.</p> </div> </div> </div> <div class="flex justify-between lg:block"> <div class="text-gray-400 flex self-end lg:self-center justify-center mt-2 gap-2 md:gap-3 lg:gap-1 lg:absolute lg:top-0 lg:translate-x-full lg:right-0 lg:mt-0 lg:pl-2 visible">&nbsp;</div> </div> </div> </div> </div>
+                  </div>
+                </div><div class="task-details">
+                  <h1>Overview of Project Synopsis</h1>
+                  
+                  <p>Assigned On: 04 Jan 2024 16:20:19</p>
+                  
+                  <p>Due Date: 08 Jan 2024</p>
+                  
+                  <div class="status">Status: Pending</div>
+                  
+                  <p>Reference: No reference required to complete this task</p>
+                  
+                  <div class="group w-full text-gray-800 dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 bg-gray-50 dark:bg-[#444654]"> <div class="text-base gap-4 md:gap-6 md:max-w-2xl lg:max-w-xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0 m-auto"> <div class="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]"> <div class="flex flex-grow flex-col gap-3"> <div class="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap"> <div class="markdown prose w-full break-words dark:prose-invert light"> <p>The Stock Trading Application is a software system that allows users to buy and sell stocks in real-time using a user-friendly interface. The application is built using Java and is integrated with popular stock exchanges such as the National Stock Exchange and Bombay Stock Exchange.</p> <p>The primary goal of the Stock Trading Application is to provide users with a convenient way to trade stocks online. The application allows users to access real-time stock market data, view their portfolio, and execute trades instantly. The application is designed to be highly responsive, scalable, and secure, ensuring that users have a seamless trading experience.</p> <p>The application includes several key features such as real-time stock quotes, advanced charting tools, news alerts, and customized watchlists. Users can create personalized watchlists to track specific stocks and receive alerts when those stocks reach certain price levels.</p> <p>The application is integrated with various payment gateways to ensure seamless and secure transactions. Users can fund their accounts using various payment methods such as credit/debit cards, wire transfers, or online wallets. The application also supports multiple currencies, making it easy for users to trade stocks globally.</p> <p>The Stock Trading Application is designed to be highly customizable, allowing financial institutions to tailor the platform to their specific needs. The application can be easily integrated with existing trading platforms, risk management tools, and other financial software systems.</p> <p>Overall, the Stock Trading Application is a powerful and versatile platform that provides users with a convenient and secure way to trade stocks online. It is built using Java, ensuring that it is highly responsive, scalable, and secure. The application is designed to be highly customizable, making it suitable for use by financial institutions of all sizes.</p> </div> </div> </div> <div class="flex justify-between lg:block"> <div class="text-gray-400 flex self-end lg:self-center justify-center mt-2 gap-2 md:gap-3 lg:gap-1 lg:absolute lg:top-0 lg:translate-x-full lg:right-0 lg:mt-0 lg:pl-2 visible">&nbsp;</div> </div> </div> </div> </div>
+                  
+                  <!--<div classclass="actions">
+                    <button>Mark as Completed</button>
+                    <button>Request Assistance</button>
+                    <button>Submit Task</button>
+                  </div>-->
+                  
+                  <div class="comments">
+                    Develop a professional project presentation on the basis of synopsis. Deliver the presentation in the scrum meeting. Click on ASSIGN NEW TASK to start working on this project tasks.
+                  </div>
+                </div>    
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Intern Tracker. All rights reserved.</p>
+      <ul>
+        <li><a href='https://hackveda.in/Terms%20and%20Conditions.pdf'>Terms of Service</a></li>
+        <li><a href='https://hackveda.in/Refund%20and%20Cancellation.pdf'>Refund & Cancellation</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<?php
+// PHP code goes here
+?>

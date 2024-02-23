@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Presentations Search</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .search-bar {
+      margin-bottom: 20px;
+    }
+
+    .video-item {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-embed {
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      position: relative;
+    }
+
+    .video-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .video-details {
+      padding: 10px;
+    }
+
+    .video-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .video-presenter {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .video-date {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Video Presentations Search</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <!-- Add your navigation links here -->
+            <li><a href="/intern-tracker/profile.php" style="color:#fff;">Intern Tracker</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <section class="main-content">
+    <div class="container">
+      <h1 class="text-center mb-4">Video Presentations Search</h1>
+
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <div class="input-group">
+          <input id="video_text" type="text" class="form-control" placeholder="Search for video presentations...">
+          <div class="input-group-append">
+            <button id="btn_search" class="btn btn-primary" type="button">Search</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Presentations Grid -->
+      <div id="video_data" class="row">
+          
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/-NFdhhYv7I8?si=fJ0pvTYgrE_8A1fT&t=79?start=79" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Reading CSV Data And Plotting Candlestick Patterns In Python</h2>
+              <p class="video-presenter">Presented by SAWAN KUMAR SWAIN</p>
+              <p class="video-date">Date: 15 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/-NFdhhYv7I8?si=JMKptKNpWTrG3dtg&t=1022?start=1022" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Overview Of Project Synopsis</h2>
+              <p class="video-presenter">Presented by Rishikesh Rajaram Devadkar</p>
+              <p class="video-date">Date: 15 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/1v3DY-kjRho?si=9AZn1IxKnnuD-3QX&t=766?start=766" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Project Timeline</h2>
+              <p class="video-presenter">Presented by Reeva Bakshi</p>
+              <p class="video-date">Date: 14 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/1v3DY-kjRho?si=WqGySlv31727bRVT&t=4511?start=4511" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Man In The Middle Attack Using ARPSPOOFING</h2>
+              <p class="video-presenter">Presented by Khushi Shakya</p>
+              <p class="video-date">Date: 14 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/1v3DY-kjRho?si=EtoPMeop3x7lxOCj&t=3357?start=3357" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Reading CSV Data And Plotting Candlestick Patterns In Python</h2>
+              <p class="video-presenter">Presented by KODAMANCHILI ABHIJNANA KARTHIKEYA</p>
+              <p class="video-date">Date: 14 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/1v3DY-kjRho?si=IiyjmKBGGiGSwJUA&t=2765?start=2765" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Project Timeline</h2>
+              <p class="video-presenter">Presented by Shalwi Kumari</p>
+              <p class="video-date">Date: 14 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/1v3DY-kjRho?si=AwlTuVV5JGVO3Oq1&t=1708?start=1708" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Internship Curriculum For UI Design Intern To Develop Stock Market Trading Applications</h2>
+              <p class="video-presenter">Presented by RATHVA INDRESHKUMAR SAROJBHAI</p>
+              <p class="video-date">Date: 14 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/1v3DY-kjRho?si=NaSeR8AYKoNICPB8&t=106?start=106" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Overview Of Project Synopsis</h2>
+              <p class="video-presenter">Presented by Maniyar Aamer</p>
+              <p class="video-date">Date: 14 February2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/bD5k_tSzjNs?si=yxUavusSaGkCljro&t=1051?start=1051" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Create A Linux Instance On AWS EC2</h2>
+              <p class="video-presenter">Presented by Sonali Rohit Pednekar</p>
+              <p class="video-date">Date: 13 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/bD5k_tSzjNs?si=BH1hsrMuygf2nKwM&t=6108?start=6108" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Database And API Design</h2>
+              <p class="video-presenter">Presented by Sanskar Patmase</p>
+              <p class="video-date">Date: 13 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/bD5k_tSzjNs?si=oec8Qw-9gTbsGvUt&t=5328?start=5328" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Create A Presentation On What Is Docker And How It Works</h2>
+              <p class="video-presenter">Presented by G Dileep Naidu</p>
+              <p class="video-date">Date: 13 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/bD5k_tSzjNs?si=cpN7npjk3W2Q-pcp&t=4776?start=4776" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Overview Of The Project Synopsis</h2>
+              <p class="video-presenter">Presented by Rohit Kakaji Satalkar </p>
+              <p class="video-date">Date: 13 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/bD5k_tSzjNs?si=JCCwL3ATBFxuzaAn&t=4074?start=4074" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Overview Of The Project Synopsis</h2>
+              <p class="video-presenter">Presented by Sanskruti Suryawanshi</p>
+              <p class="video-date">Date: 13 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/bD5k_tSzjNs?si=Nrkv68o8Qeai49v8&t=3408?start=3408" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">To Read CSV Historical Data Of The Stock Market In Java</h2>
+              <p class="video-presenter">Presented by Anjali Kumari</p>
+              <p class="video-date">Date: 13 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/bD5k_tSzjNs?si=Nxv2wfgtdT0bZgVF&t=2347?start=2347" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Getting Started And Full Walkthrough Of Adalo</h2>
+              <p class="video-presenter">Presented by Prajwal Janbandhu</p>
+              <p class="video-date">Date: 13 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/bD5k_tSzjNs?si=3609Jfy9RKXKVgKq&t=1779?start=1779" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Project Timeline</h2>
+              <p class="video-presenter">Presented by Vanshita Garg</p>
+              <p class="video-date">Date: 13 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/pCyrb9d_0XY?si=8ds-ihkN6cVnsbBn&t=39?start=39" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Develop Hackveda Business Operations Scripts In Python</h2>
+              <p class="video-presenter">Presented by Rounak Raj</p>
+              <p class="video-date">Date: 9 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/lq1zRHBwn4g?si=IsiyvnbqbeRwIaF-&t=6410?start=6410" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Create A Linux Instance On AWS EC2</h2>
+              <p class="video-presenter">Presented by Shubham Rajesh Vanarase</p>
+              <p class="video-date">Date: 8 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/lq1zRHBwn4g?si=Q7GagazF6w7CSta0&t=5161?start=5161" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Overview Of The Project Synopsis</h2>
+              <p class="video-presenter">Presented by Jinal Sureshchandra Laddha </p>
+              <p class="video-date">Date: 8 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/lq1zRHBwn4g?si=Clt6r6yZlYsU7te7&t=4182?start=4182" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Predictive Modeling</h2>
+              <p class="video-presenter">Presented by Hiren Manani</p>
+              <p class="video-date">Date: 8 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/lq1zRHBwn4g?si=jjQ_mN2dV5F39HM9&t=3138?start=3138" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">GIGW 3.0 Compliance With ReactJS</h2>
+              <p class="video-presenter">Presented by Patel Tishaben Jitubhai</p>
+              <p class="video-date">Date: 8 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/lq1zRHBwn4g?si=gaZNjcUbaC0lYazP&t=1921?start=1921" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Man In The Middle Attack Using ARPSPOOFING</h2>
+              <p class="video-presenter">Presented by HENIL SANJAYKUMAR GANDHI</p>
+              <p class="video-date">Date: 8 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/lq1zRHBwn4g?si=PiAl77WdejSY8iYf&t=3790?start=3790" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Develop A Doctor Search Website</h2>
+              <p class="video-presenter">Presented by Neha Daulat Bangar </p>
+              <p class="video-date">Date: 8 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/lq1zRHBwn4g?si=YVusR5Fv70xayAJC&t=1466?start=1466" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Denial Of Service Attack Using OWASP HTTPDos Tool</h2>
+              <p class="video-presenter">Presented by Prajapati Deepkumar Vishnubhai</p>
+              <p class="video-date">Date: 8 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/lq1zRHBwn4g?si=gdrJ8trsFYh8W4d5&t=723?start=723" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Setup Amazon Simple Email Service</h2>
+              <p class="video-presenter">Presented by Anjali Kanojiya</p>
+              <p class="video-date">Date: 8 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/lq1zRHBwn4g?si=Wvqvb8ZNiis3pnRi&t=28?start=28" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Create A Linux Instance On AWS EC2</h2>
+              <p class="video-presenter">Presented by Aaryan Jayant Chipkar</p>
+              <p class="video-date">Date: 8 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/pCyrb9d_0XY?si=4tnRYsz8vLWYibKg&t=1309?start=1309" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">MyFitnessPal App Requirement Specifications</h2>
+              <p class="video-presenter">Presented by Muntaseer Mohammad Iqbal Saudagar</p>
+              <p class="video-date">Date: 6 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/2GCCYz-RXz4?si=YhoO-rZBQHda2FVK&t=5285?start=5285" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Project Synopsis: Database Design For Stock Trading App</h2>
+              <p class="video-presenter">Presented by Rutuja Sandeep Bothe</p>
+              <p class="video-date">Date: 6 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/2GCCYz-RXz4?si=MP36pDDu182VJtj9&t=3869?start=3869" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Man In The Middle Attack Using ARPSPOOFING</h2>
+              <p class="video-presenter">Presented by Tanya Dalal</p>
+              <p class="video-date">Date: 6 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/2GCCYz-RXz4?si=NiD-ZmWQb82OUUcJ&t=3211?start=3211" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Develop Hackveda Business Operations Scripts In Python</h2>
+              <p class="video-presenter">Presented by Janvi Naik</p>
+              <p class="video-date">Date: 6 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/2GCCYz-RXz4?si=59VUc_Ak8zWZXgxn&t=2432?start=2432" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Project Timeline</h2>
+              <p class="video-presenter">Presented by Mansi Vikram Shahapurkar</p>
+              <p class="video-date">Date: 6 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/2GCCYz-RXz4?si=SHgvZ9rC0I31GJGp&t=1931?start=1931" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">To Read CSV Historical Data Of The Stock Market In Java</h2>
+              <p class="video-presenter">Presented by Devang Patel</p>
+              <p class="video-date">Date: 6 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/2GCCYz-RXz4?si=ChL39NueHUL3lPFY&t=909?start=909" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Develop A Doctor Search Website</h2>
+              <p class="video-presenter">Presented by Nilesh Ghanshyam Paliwal</p>
+              <p class="video-date">Date: 6 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/2GCCYz-RXz4?si=ff5onIr377JBap2M&t=4?start=4" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Database And API Design</h2>
+              <p class="video-presenter">Presented by Tina Sharma</p>
+              <p class="video-date">Date: 6 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/wpQp-fAsXE8?si=ss_xiWDY0DeeCFzi&t=6534?start=6534" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Researching Performance Marketing And Affiliate Networks</h2>
+              <p class="video-presenter">Presented by Anjali Sharma</p>
+              <p class="video-date">Date: 2 February 2024</p>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="video-item">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/wpQp-fAsXE8?si=GEaj4JaZI72inVu4&t=5469?start=5469" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+              <h2 class="video-title">Overview Of The Project Synopsis</h2>
+              <p class="video-presenter">Presented by Reeva Bakshi</p>
+              <p class="video-date">Date: 2 February 2024</p>
+            </div>
+          </div>
+        </div>          
+        
+        <!-- Add more video items here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Presentation Details Modal (Hidden by default) -->
+  <div class="modal fade" id="videoDetailsModal" tabindex="-1" role="dialog" aria-labelledby="videoDetailsModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="videoDetailsModalLabel">Searching ...</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Video player and additional details will be displayed here -->
+        </div>
+      </div>
+    </div>
+  </div>

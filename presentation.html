@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intern Presentations</title>
+  <style>
+    /* Reset default browser styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Set global styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #1e0e62;
+      padding: 10px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .menu li {
+      margin-left: 20px;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    /* Presentation list styles */
+    .presentation-list {
+      margin-top: 30px;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+
+    .presentation-list h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .presentation-list ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .presentation-list li {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+    }
+
+    .presentation-list li .details {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .presentation-list li h2 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .presentation-list li p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .presentation-list li .status {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /* Presentation details styles */
+    .presentation-details {
+      margin-top: 30px;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+
+    .presentation-details h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .presentation-details p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .presentation-details .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .presentation-details .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .presentation-details .attachments {
+      margin-bottom: 20px;
+    }
+
+    .presentation-details .attachments a {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .presentation-details .actions {
+      margin-bottom: 20px;
+    }
+
+    .presentation-details .actions button {
+      padding: 10px 20px;
+      background-color: #1e0e62;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .presentation-details .feedback {
+      margin-bottom: 20px;
+    }
+
+    .presentation-details .feedback p {
+      margin-bottom: 10px;
+    }
+
+    /* Supervisor details styles */
+    .supervisor-details {
+      margin-bottom: 20px;
+    }
+
+    .supervisor-details h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .supervisor-details p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Related presentations styles */
+    .related-presentations {
+      margin-bottom: 20px;
+    }
+
+    .related-presentations h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .related-presentations ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    .related-presentations ul li {
+      margin-bottom: 5px;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #1e0e62;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: auto; /* Push the footer to the bottom */
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    footer ul li {
+      margin-left: 10px;
+    }
+
+    footer ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    .action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.action-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1e0e62;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.action-button:last-child {
+  margin-right: 0;
+}
+
+  </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3822574280143220"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Intern Tracker</div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+        <li><a href="presentation.html">Presentations</a></li>
+        <li><a href="search.html">Search References</a></li>
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="logout.php">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    
+          
+          
+                  <div class="presentation-details">
+                  <p>Presentation Date: 7 March 2024</p>
+                  <p><b>Topic: Software Development Lifecycle for Stock Trading Application</b></p><div class="status"><b>Status:</b> Pending</div><div class="progress">
+                            <div class="progress-bar">
+                              <span style="width: 0%;"></span>
+                            </div>
+                          </div><br ><br ><div class="feedback">
+                                <h4>Feedback</h4>
+                                <p>Presentation Score: Score Pending</p>
+                                <p>Feedback Pending</p>
+                                </div></div>
+                  <div class="presentation-details">
+                  <p>Presentation Date: 9 January 2024</p>
+                  <p><b>Topic: Overview of Project Synopsis</b></p><div class="status"><b>Status:</b> Completed</div><div class="progress">
+                            <div class="progress-bar">
+                              <span style="width: 0%;"></span>
+                            </div>
+                          </div><br ><br ><div class="feedback">
+                                <h4>Feedback</h4>
+                                <p>Presentation Score: 64%</p>
+                                <p>Presentation was good,choose a better template,make a hook story at start and explain with some examples,all the best</p>
+                                </div></div>  </div>
+
+  <!--<footer>
+    <div class="container">
+      <p>&copy; 2023 Intern Tracker. All rights reserved.</p>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#terms">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>-->
+</body>
+<script>
