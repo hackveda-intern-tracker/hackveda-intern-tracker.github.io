@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intern Tracker</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Reset default browser styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Set global styles */
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh; /* Set minimum height of the body to 100% of the viewport height */
+      display: flex;
+      flex-direction: column; /* Arrange the body content in a column layout */
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #1e0e62;
+      padding: 10px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color:#fff;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .menu li {
+      margin-left: 20px;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    /* Home section styles */
+    #home {
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 100px 0;
+      flex: 1; /* Fill remaining space between header and footer */
+    }
+    
+    .cta-buttons {
+      margin-top: 20px;
+    }
+
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #1e0e62;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: auto; /* Push the footer to the bottom */
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    footer ul li {
+      margin-left: 10px;
+    }
+
+    footer ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+  </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3822574280143220"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Intern Tracker</div>
+      <ul class="menu">
+        <li><a href="/intern-tracker">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+  <div class="container">
+    <h1>Welcome to Intern Tracker</h1>
+    <p>Track your progress, manage tasks, and showcase your achievements!</p>
+    <div class="cta-buttons">
+      <a href="signup.html" class="cta-btn">Sign Up</a>
+      <a href="login.html" class="cta-btn">Login</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Other sections go here -->
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Intern Tracker. All rights reserved.</p>
+      <ul>
+        <li><a href='https://hackveda.in/Terms%20and%20Conditions.pdf'>Terms of Service</a></li>
+        <li><a href='https://hackveda.in/Refund%20and%20Cancellation.pdf'>Refund & Cancellation</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
